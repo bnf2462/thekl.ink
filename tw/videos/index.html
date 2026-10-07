@@ -11,7 +11,7 @@ button:active,a:active{opacity:.72}
 details.fold-block>summary:active .chevron{background:var(--accent)}
 header{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 16px;
 background:var(--hdr);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-header{font-size:16px}.site-name{color:var(--ink);font-weight:700;letter-spacing:.04em;text-decoration:none}footer{max-width:1120px;margin:0 auto;padding:28px 16px 32px;color:var(--mute);font-size:12px}lite-youtube {
+header{font-size:16px}.site-name{color:var(--ink);font-weight:700;letter-spacing:.04em;text-decoration:none}footer{max-width:1530px;margin:0 auto;padding:28px 16px 32px;color:var(--mute);font-size:12px}lite-youtube {
     background-color: #000;
     position: relative;
     display: block;
@@ -107,7 +107,7 @@ lite-youtube.lyt-activated > .lyt-playbtn {
     width: 1px;
   }
 
-.feature-page{max-width:1120px;margin:0 auto;padding:20px 16px 8px}
+.feature-page{max-width:1530px;margin:0 auto;padding:20px 16px 8px}
 .feature-page h1{margin:4px 0 2px;font:700 30px/1.2 "Rubik","Noto Sans JP",sans-serif;letter-spacing:.01em}.feature-page h1 .feature-page__noun{background-image:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .feature-page .feature-page__sub{margin:0 0 14px;color:var(--mute);font-size:14px}
 .option{min-height:44px;padding:0;border:0;background:none;color:var(--ink);font:inherit;cursor:pointer;display:inline-flex;align-items:center}
@@ -135,13 +135,16 @@ font:inherit;font-size:13px}.feature-page .more-button[hidden]{display:none}
 .video-list.video-list--clips{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:0}.video-list.video-list--clips>li{padding:14px 6px 16px}
 @media (min-width:720px){.video-list.video-list--clips{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}}
 lite-youtube.video-list__player--short{background-size:cover;background-position:center}lite-youtube.video-list__player--short::after{padding-bottom:calc(100% / (9 / 16))}
-.watch-filters__groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));grid-auto-rows:1fr;gap:8px;margin:0 0 8px}
+.watch-filters__groups{display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:1fr;gap:8px;margin:0 0 8px}
+@media (min-width:768px){.watch-filters__groups{grid-template-columns:repeat(auto-fill,minmax(182px,1fr))}}
+@media (min-width:1164px){.watch-filters__groups{grid-template-columns:repeat(6,1fr)}}
 .tile{position:relative;min-height:64px;display:grid;grid-template-columns:36px 1fr;align-items:center;column-gap:8px;
 padding:10px 10px 10px 8px;font:inherit;text-align:left}
 .tile .tile__pic{width:36px;height:36px;border-radius:9px;overflow:hidden;display:grid;place-items:center;background:var(--grad);color:#000;font:700 10px "Rubik",sans-serif}
 .tile .tile__pic img{width:100%;height:100%;object-fit:cover;display:block}.tile .tile__text{min-width:0}
 .tile .tile__gen{position:absolute;right:12px;bottom:9px;padding:0 7px;border:1px solid var(--line);border-radius:8px;font-size:11px;line-height:16px;color:var(--ink)}
 .tile b{display:block;font-size:14px;line-height:1.25}.tile i{display:block;font-style:normal;font-size:12px;color:var(--mute)}
+.tile .tile__pic--solo{background:#000}.tile .tile__pic--solo img,.tile .tile__pic--solo svg{width:100%;height:100%;object-fit:contain;display:block}
 .watch-filters__picked{display:flex;align-items:center;gap:10px;margin:0 0 4px}.watch-filters__picked .watch-filters__group-name{font-size:20px;color:var(--accent)}
 .watch-filters__member-tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:-4px -4px 4px;padding:4px}.watch-filters__member-tabs::-webkit-scrollbar{display:none}
 .watch-filters__member-tabs .option{flex:none}.watch-filters__member-tabs .option[hidden]{display:none}.watch-filters__member-tabs .option__pill i{display:none}
