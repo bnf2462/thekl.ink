@@ -53,9 +53,9 @@ textarea{display:block;width:100%;margin-top:10px;height:90px;background:var(--c
 .year-tabs .more-button,.feature-page .more-button{color:var(--accent2);background:none;border-color:transparent;cursor:pointer}
 .year-tabs .more-button.more-button--on{color:var(--accent);background:none;border-color:transparent}
 .more-button .more-button__label{display:inline-grid}
-.more-button .more-button__label>span{grid-area:1/1}
+.more-button .more-button__label>span{grid-area:1/1;justify-self:end}
 .more-button[aria-expanded="false"] .more-button__label>span+span,.more-button[aria-expanded="true"] .more-button__label>span:first-child{visibility:hidden}
-.more-button .more-button__sign{flex:none;width:16px;height:16px;transition:transform .2s ease}
+.more-button .more-button__sign{flex:none;width:16px;height:16px;margin-left:-1.5px;transition:transform .2s ease}
 .more-button .more-button__sign .more-button__stroke{transform-box:fill-box;transform-origin:center;transition:transform .2s ease}
 .more-button[aria-expanded="true"] .more-button__sign{transform:rotate(180deg)}
 .more-button[aria-expanded="true"] .more-button__sign .more-button__stroke{transform:rotate(90deg)}
