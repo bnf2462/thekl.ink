@@ -129,7 +129,6 @@ document.querySelectorAll('.year-filter').forEach(function(box){
     var k=cells(),btns=Array.prototype.slice.call(row.querySelectorAll('button[data-y]'));
     more.hidden=true;ybox.hidden=true;
     if(btns.length>k){more.hidden=false;btns.slice(k-1).forEach(function(b){ybox.appendChild(b);});}
-    else{tabs.style.setProperty('--k',btns.length);}
     mark();
   }
   function show(v){
